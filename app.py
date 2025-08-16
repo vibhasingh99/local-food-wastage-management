@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 from datetime import datetime
 
-DB_PATH = r"C:\Users\admin\food_waste.db"
+DB_PATH = "food_waste.db"
 st.set_page_config(page_title="Local Food Wastage System", layout="wide")
 
 @st.cache_data
@@ -329,3 +329,4 @@ with st.expander("Update / Delete claim"):
                         st.error("Delete failed: " + str(e))
     else:
         st.info("No claims available.")
+
